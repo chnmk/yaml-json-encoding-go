@@ -10,7 +10,7 @@ import (
 )
 
 func CreateJSONFile() {
-	jsonFile, err := os.Create("jsonInput.json")
+	jsonFile, err := os.Create("data/input/jsonInput.json")
 	if err != nil {
 		fmt.Printf("json file creation fail: %s", err.Error())
 	}
@@ -65,7 +65,7 @@ func CreateJSONFile() {
 }
 
 func CreateYAMLFile() {
-	yamlFile, err := os.Create("yamlInput.yml")
+	yamlFile, err := os.Create("data/input/yamlInput.yml")
 	if err != nil {
 		fmt.Printf("yaml file creation fail: %s", err.Error())
 	}
